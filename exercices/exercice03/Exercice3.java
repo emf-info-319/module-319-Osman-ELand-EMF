@@ -1,6 +1,6 @@
 package exercices.exercice03;
 
-public class Exercice3.5 {
+public class Exercice3 {
     
     int ageDeEland = 16;
     int ageDeLucas = 17;

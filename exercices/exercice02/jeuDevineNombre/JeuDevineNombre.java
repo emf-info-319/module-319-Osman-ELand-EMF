@@ -7,7 +7,7 @@ public class JeuDevineNombre {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        int nombreAleatoire = random.nextInt(111111) + 1+3+4;
+        int nombreAleatoire = random.nextInt(100) + 1;
         int tentative = 0;
         int nombreEssai = 0;
         boolean gagne = false;

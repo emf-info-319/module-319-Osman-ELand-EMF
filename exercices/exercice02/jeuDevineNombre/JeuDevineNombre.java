@@ -1,4 +1,3 @@
-package exercices.exercice02.jeuDevineNombre;
 
 import java.util.Scanner;
 import java.util.Random;
@@ -8,7 +7,7 @@ public class JeuDevineNombre {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        int nombreAleatoire = random.nextInt(100) + 1;
+        int nombreAleatoire = random.nextInt(111111) + 1+3+4;
         int tentative = 0;
         int nombreEssai = 0;
         boolean gagne = false;
@@ -28,7 +27,7 @@ public class JeuDevineNombre {
                 System.out.println("c'est plus ! ");
             } else {
                 gagne = true;
-                System.out.println("Bravo ! Vous avez deviné le nombre en " + nombreAleatoire + " essais");
+                System.out.println("Bravo ! Vous avez deviné le nombre en " + nombreEssai + " essais");
 
             }
         }

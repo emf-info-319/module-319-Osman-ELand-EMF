@@ -3,36 +3,35 @@ import java.util.Scanner;
 
 public class JeuDuPondue {
 
-    public static void main(String[] args) {                                          
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner (System.in);                             
         String[] tabeauDeMot = { "apple", "bread", "chair", "dance", "eagle", "flame", "grape", "house", "input", "jelly",
         "knife", "lemon", "mouse", "night", "ocean", "piano", "queen", "robot", "snake", "tiger",
         "ultra", "vivid", "whale", "xenon", "yacht", "zebra", "angel", "beach", "candy", "dream",
         "earth", "frost", "giant", "happy", "ideal", "jolly", "karma", "lucky", "magic", "noble",
-        "olive", "pearl", "quiet", "raven", "smile", "trust", "unity", "vocal", "witty", "xylos"};    
-
-        int index = (int) (Math.random() * (tabeauDeMot.length)); 
-        
+        "olive", "pearl", "quiet", "raven", "smile", "trust", "unity", "vocal", "witty", "xylos"};     // mots disponibles
+        int index = (int) (Math.random() * (tabeauDeMot.length));  // choisi le mot
         String motATrouver = tabeauDeMot[index]; 
-        
 
+        char[] lettresATrouver = motATrouver.toCharArray(); // transforme le mot en un tableau de char
+        char[] lettresTrouvées = new char[lettresATrouver.length]; // deuxième tableau de char pour comparer
+        for (int i = 0; i < lettresTrouvées.length; i++) { // pour remplir le deuxième taleau de tirets
+            lettresTrouvées[i] = '-';
+        }
 
-        String tentative = ""; 
-        
-
-        int nombreEssai = 0;                                                           
-        
-        boolean gagne = false;      
-
+        boolean gagne = false;  
         System.out.println("Bienvenu dans le jeu du Pendue !");                      
-        System.out.println("J'ai choisi un Mot aléatoirement.");                     
-        System.out.println("Essaye de le deviner !"); 
+        System.out.println("J'ai choisi un Mot aléatoirement.");
+        System.out.println("Voici le mot à trouver :");
+        System.out.print(lettresTrouvées); // pour afficher le mot en nombre de tirets   
+        String tentative = "";
+        int nombreEssai = 0; 
 
-        Scanner scanner = new Scanner (System.in); 
 
         while (!gagne) {                                                              
-            System.out.println("Entrez votre lettre _ _ _ _ _ "); 
+            System.out.println("Entrez votre lettre en minuscule SVP : "); 
                                                                                   
-            tentative = scanner.nextLine();
+           tentative = scanner.nextLine();
             if (motATrouver.contains(tentative)) {                                             
                 System.out.println("cette lettre est dans le mot choisi");
                 // mettre la lettre à la place, ..

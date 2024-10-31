@@ -1,7 +1,7 @@
 public class ExerciceTableau {
     public static void main(String[] args) {
 
-        int[] monTableau2 = new int[5]; // Declaaration du tableau, il s'affichera "0 0 0 0 0 "
+        int[] monTableau2 = new int[5]; // Declaration du tableau, il s'affichera "0 0 0 0 0 "
         for (int i = 0; i < monTableau2.length; i++) {
             System.out.println(monTableau2[i]);
         }

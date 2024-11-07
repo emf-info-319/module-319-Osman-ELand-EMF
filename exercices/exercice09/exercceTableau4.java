@@ -1,4 +1,4 @@
-package exercices.exercice09;
+
 
 public class exercceTableau4 {
     public static void main(String[] args) {

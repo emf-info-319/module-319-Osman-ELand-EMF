@@ -15,19 +15,19 @@ public class Exercice11 {
 
 
 
-        afficheNombre(342534534); //fait par le prof, a revoire pour comprendre 
-        additionne(3, 5);   //fait par le prof, a revoire pour comprendre 
+        afficheNombre(342534534); 
+        additionne(3, 5);   
     }
 
     public static int[] inverseLeTableau(int[] tableauInitial) {
         return null;
     }
 
-    public static void afficheNombre(int nombre){   //fait par le prof, a revoire pour comprendre 
+    public static void afficheNombre(int nombre){   
         System.out.println(nombre);
     }
 
-    public static int additionne(int nombre1, int nombre2){   //fait par le prof, a revoire pour comprendre 
+    public static int additionne(int nombre1, int nombre2){   
         System.out.println(nombre1+nombre2);
         return nombre1 + nombre2;
     }

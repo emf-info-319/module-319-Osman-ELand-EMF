@@ -1,9 +1,9 @@
-package exercices.exercice10;
+package exercice10;
 
 public class ExercicesMethodesTableaux {
     public static void main(String[] args) {
         int[] tableau = creerTab(5);//appel de la méthode creerTab qui me retourne le tableau avec la taille donnée en paramètre (ici 5)
-        int[] tableau2 = remplisage();
+        int[] tableau2 = remplisage(6);
     }
 
     //Crée un tableau d'une taille donnée en paramètre
@@ -16,6 +16,6 @@ public class ExercicesMethodesTableaux {
         int[] tab = new int[taille];
 
 
-        return 
+        return tab;  
 }
 }

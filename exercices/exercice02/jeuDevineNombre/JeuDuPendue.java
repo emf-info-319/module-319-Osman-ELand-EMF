@@ -1,16 +1,10 @@
 
 import java.util.Scanner;
 
-public class JeuDuPondue {
+public class JeuDuPendue {
 
     public static void main(String[] args) {
-        String[] tabeauDeMot = { "apple", "bread", "chair", "dance", "eagle", "flame", "grape", "house", "input",
-                "jelly",
-                "knife", "lemon", "mouse", "night", "ocean", "piano", "queen", "robot", "snake", "tiger",
-                "ultra", "vivid", "whale", "xenon", "yacht", "zebra", "angel", "beach", "candy", "dream",
-                "earth", "frost", "giant", "happy", "ideal", "jolly", "karma", "lucky", "magic", "noble",
-                "olive", "pearl", "quiet", "raven", "smile", "trust", "unity", "vocal", "witty", "xylos" }; // mots
-                                                                                                            // disponibles
+        String[] tabeauDeMot = { "Amour", "Livre", "Chanson", "Soleil", "Montagne", "Plage", "Arbre", "Lune", "Océan", "Voyage", "Bonheur", "Rêve", "Musique", "Sourire", "Café", "Poésie", "Liberté", "Étoile", "Jardin", "Légende" }; // mots  // disponibles
         int index = (int) (Math.random() * (tabeauDeMot.length)); // choisi le mot
         String motATrouver = tabeauDeMot[index];
 

@@ -11,7 +11,6 @@ public class devoir01 {
 
         } else {
             estMajeur = false;
-
         }
         if (estMajeur) {
             System.out.println("je suis Majeur");

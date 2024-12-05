@@ -22,7 +22,7 @@ public class Eval2 {
 
             } else {
                 int nbEnLeveAi = (int) Math.random() * (MAX - MIN + 1) + MIN;
-                System.out.println("l'ai veut enlever " + nbEnLeveAi);
+                System.out.println("l'iA veut enlever " + nbEnLeveAi);
                 batonnets = enLeverBatonnets(batonnets, nbEnLeveAi);
             }
         }

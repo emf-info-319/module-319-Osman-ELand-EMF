@@ -8,7 +8,7 @@ public class codageEnRouds {
         
         System.out.println("Le groupe créé contient les élèves suivants:");
         for (String eleve : groupe) {
-            System.out.println(eleve);
+            System.out.println(groupe);
         }
     }
 
@@ -21,7 +21,7 @@ public class codageEnRouds {
     public static boolean controlerDoublon(String[] Groupe, String nom) {
         boolean present = false;
         for (int i = 0; i < Groupe.length; i++) {
-            if (Groupe[i]==(nom)) {
+            if (Groupe[i] == (nom)) {
                 present = true;
             }
         }

@@ -5,17 +5,17 @@ public class codageEnRouds {
 
     public static void main(String[] args) {
         String[] groupe = creerGroupe(4);
-        
-        System.out.println("Le groupe créé contient les élèves suivants:");
-        for (String eleve : groupe) {
-            System.out.println(eleve);
+
+        for (int i = 0; i < groupe.length; i++) {
+            System.out.println(groupe);
         }
+
     }
 
     public static String choisirEleve() {
-        int nomAleatoir = (int) Math.random() * (Eleve.length - 0 + 1) + 0;
+        int nomAleatoire = (int) Math.random() * ((Eleve.length -1) - 0 + 1) + 0;
 
-        return Eleve[nomAleatoir];
+        return Eleve[nomAleatoire];
     }
 
     public static boolean controlerDoublon(String[] Groupe, String nom) {
@@ -49,4 +49,5 @@ public class codageEnRouds {
         }
         return Groupe;
     }
+
 }

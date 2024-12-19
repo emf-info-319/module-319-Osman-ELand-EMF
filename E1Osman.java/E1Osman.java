@@ -28,7 +28,7 @@ public class E1Osman {
                 System.out.println("Jeu terminé");
                 SCANNER.close();
                 enJeu = true;
-                
+
             }
 
         }

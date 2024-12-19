@@ -8,7 +8,7 @@ public class codageEnRouds {
         
         System.out.println("Le groupe créé contient les élèves suivants:");
         for (String eleve : groupe) {
-            System.out.println(groupe);
+            System.out.println(eleve);
         }
     }
 
